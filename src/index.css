@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f8fafc;
+}
+
+/* Ocultar scrollbars al imprimir */
+@media print {
+  body { background-color: white; }
+  aside, .fixed.z-50 { display: none !important; }
+  main { margin-left: 0 !important; padding: 0 !important; }
+}
